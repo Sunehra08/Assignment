@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .navbar{
+            background:linear-gradient(45deg,#333333,5D3FD3);
+            padding:20px;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:100;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .main{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .name{
+            font-family: 'Poppins',sans-serif;
+            font-size: 28px;
+            color:#ffffff;
+            letter-spacing: 2px;
+        }
+        
+        .nav-links{
+            display:flex;
+            gap:25px;
+
+        }
+        .nav-links a{
+            color:blue;
+            font-family: 'Roboto',sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-links a:hover{
+            background-color: #ffd700;
+            color:#333333;
+            transform:scale(1.1);
+        }
+        .nav-links a::before{
+            content:'';
+            position:absolute;
+            width:100%;
+            height:4px;
+            background-color: #ffd700;
+            bottom:-5px;
+            left:0;
+            opacity:0;
+            transition:opacity 0.3s,transform 0.3s;
+            transform:scaleX(0);
+            transform-origin: right;
+        
+        }
+        .nav-links a:hover::before{
+            opacity:1;
+            transform:scaleX(1);
+            transform-origin:left;
+        }
+        
+        
+        .footer{
+            background:linear-gradient(45deg, #333333,#5d3fd3);
+            color:#ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer container{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+    .footer-links,social-media{
+        display: flex;
+        gap:20px;
+    }
+    .footer-links a{
+        color:#ffd700;
+        font-family: 'Roboto'sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    .footer-links a:hover{
+        color:#ffffff;
+    }
+    .social-icon img{
+        width:24px;
+        height: 24px;
+        transition:transform o.3 ease;
+    }
+    .social-icon:hover img{
+        transform:scale(1.2);
+    }
+    .footer-text{
+        font-size: 14px;
+        color:#aaaaaa;
+        margin-top:10px;
+        font-family:'Roboto',sans-serif;
+    }
+        h1{
+            text-align: start;
+            color:darkblue;
+            font-size: 35px;
+        }
+        
+        #img1{
+            width:700px;
+            height:500px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+
+
+        }
+        #img1:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+
+        #img2{
+            width:600px;
+            height:500px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+            float:right;
+
+
+        }
+        #img2:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+        #img3{
+            width:1400px;
+            height:600px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+
+
+        }
+        #img3:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+        #img4{
+            width:700px;
+            height:500px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+
+
+        }
+        #img4:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+        #img5{
+            width:600px;
+            height:500px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+            float:right
+
+
+        }
+        #img5:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+        #img6{
+            width:1400px;
+            height:400px;
+            border:2px solid#333;
+            border-radius:10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+
+
+        }
+        #img6:hover{
+            transform:scale(1.o5);
+            transition:transform 0.3s ease;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="main">
+            <div class="name">
+
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="workout.html">Workouts</a>
+                <a href="Nutrition Guide.html">Nutrition Guide</a>
+                <a href="Photo Gallery.html">Photo Gallery</a>
+                <a href="contact us .html">Contact Us</a>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <h1><b>PHOTO GALLERY*********</b></h1>
+
+    <img  id="img1" src="https://img.freepik.com/premium-vector/diet-plan-man-doing-exercise-planning-diet-with-fruit-vegetable-guy-doing-yoga-dietary-eating-meal-planning-nutrition-consultation-healthy-food-sport-health-lifestyle-fitness_458444-1161.jpg">
+
+    <img id="img2" src="https://www.proformfitness.co.uk/blog/wp-content/uploads/health-nutrition-fitness-workout-lifestyle.jpg">
+
+    <img id="img3" src="https://media.istockphoto.com/id/1423997728/photo/top-view-asian-man-and-woman-healthy-eating-salad-after-exercise-at-fitness-gym.jpg?s=612x612&w=0&k=20&c=abDb3WKAnawDnVikydDSN17YOZc3hsplIY65lJjNXaE=">
+
+
+    <img id="img4" src="https://img.freepik.com/premium-vector/people-doing-sport-workout-characters-active-male-female-sport-exercise-flat-friends-training-tennis-yoga-jogging-decent-vector-set_53562-15493.jpg?semt=ais_hybrid">
+
+    <img  id="img5" src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg">
+
+    <img id="img6" src="https://wallpapers.com/images/hd/healthy-food-pictures-km9yurcpjzjofsf4.jpg">
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="workout.html">Workout</a>
+    <a href="Nutrition Guide.html">Nutrition Guide</a>
+    <a href="Photo Gallery.html">Photo Gallery</a>
+    <a href="contact us .html">Contact Us </a>
+     </div>
+     <div class="social-media">
+        <a href="https://facebook.com"
+        target="_blank" class="social-icon">
+        <img src="facebook-icon.png"
+        alt="Facebook">
+    
+    </a>
+    <a href="https://twitter.com"
+    target="_blank" class="social-icon">
+    <img src="twitter-icon.png"
+    alt="Twitter">
+</a>
+<a href="https://instagram.com"
+target="_blank" class="social-icon">
+<img src="instagram-icon.png"
+alt="Instagram"></a>
+</div>
+</div>
+<p class="footer-text">2024 Fitness.All rights reserved</p>
+</footer>
+     
+    
+
+</body>
+</html>

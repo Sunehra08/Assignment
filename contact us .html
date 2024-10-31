@@ -28,8 +28,7 @@
             color:#ffffff;
             letter-spacing: 2px;
         }
-       
-        
+
         .nav-links{
             display:flex;
             gap:25px;
@@ -69,7 +68,7 @@
             transform:scaleX(1);
             transform-origin:left;
         }
-        .footer{
+    .footer{
             background:linear-gradient(45deg, #333333,#5d3fd3);
             color:#ffffff;
             padding: 20px 0;
@@ -78,7 +77,7 @@
             bottom: 0;
             width: 100%;
         }
-        .footer container{
+    .footer-container{
             display: flex;
             justify-content: space-between;
             align-items:center;
@@ -87,7 +86,7 @@
             flex-wrap: wrap;
         }
 
-    .footer-links,social-media{
+    .footer-links,.social-media{
         display: flex;
         gap:20px;
     }
@@ -115,32 +114,64 @@
         margin-top:10px;
         font-family:'Roboto',sans-serif;
     }
-        #img1 {
-            height:700px;
-            width:100%;
+        
+   body{
+    font-family:Arial,sans-serif ;
+    background-color: #f0f0f0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
-        }
-        #img2{
-            height:200px ;
-            width:45%;
-            text-align: right;
-        }
-        h1{
-            text-align:center;
-            font-size: 90px;
-            color: brown;
-        }
-        p{
-            text-shadow: 0cqb;
-            font-size:24px
-        }
+   }
+   .styled form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0,0,2);
+    width:70%
+   }
+   h2{
+    text-align: center;
+    color: #333;
+   }
+   label{
+    display:block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+   }
+   input[type="text"],
+   input[type="email"],
+   textarea{
+    width: 400px;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+   button{
+    background-color: #3498db;
+    color:#fff;
+    border:none;                                                                        
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+ button:hover{
+    background-color: #2980b9;
+ }
+
+
+
+
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="main">
             <div class="name">
-               
+
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
@@ -148,50 +179,58 @@
                 <a href="Nutrition Guide.html">Nutrition Guide</a>
                 <a href="Photo Gallery.html">Photo Gallery</a>
                 <a href="contact us .html">Contact Us</a>
-
+                
             </div>
         </div>
     </nav>
     
-    <h1>HEALTH AND FITNESS</h1>
-
-    <img id="img1" src="https://thumbs.dreamstime.com/b/invest-your-health-healthy-lifestyle-concept-diet-fitness-get-fit-fitness-equipment-healthy-food-invest-your-158227197.jpg">
-       <p>Many people strive to be fit.Fitness after all is synonymous with health . Having a high level  of over all
-        fitness is linked  with a lower risk of chronic  disease , as well as the better ability to manage health issues that do come up .<br>
-        Better fitness also promotes more functionality and mobility throughtout ones's life span.And in the short term ,
-         being active can help your day to day functioning,from better mood to sharper focus to better sleep.Simply out:Our
-          bodies are meant to move , and they tend to function better when we are more fit.  </p>
-
-          <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="workout.html">Workout</a>
-        <a href="Nutrition Guide.html">Nutrition Guide</a>
-        <a href="Photo Gallery.html">Photo Gallery</a>
-        <a href="contact us .html">Contact Us </a>
-         </div>
-         <div class="social-media">
-            <a href="https://facebook.com"
-            target="_blank" class="social-icon">
-            <img src="facebook-icon.png"
-            alt="Facebook">
-        
-        </a>
-        <a href="https://twitter.com"
+    
+    
+   
+    <forms class="styles form">
+  <h1>Contact us</h1>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name ="name" placeholder="Your Name"/>
+  <br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" email="email" placeholder="Your Email"/>
+  <br>                                                                                      
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" placeholder="Your Message"></textarea>
+  <br>
+  <button type="Submit">submit</button>
+    </forms>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="workout.html">Workout</a>
+    <a href="Nutrition Guide.html">Nutrition Guide</a>
+    <a href="Photo Gallery.html">Photo Gallery</a>
+    <a href="contact us .html">Contact Us </a>
+     </div>
+     <div class="social-media">
+        <a href="https://facebook.com"
         target="_blank" class="social-icon">
-        <img src="twitter-icon.png"
-        alt="Twitter">
+        <img src="facebook-icon.png"
+        alt="Facebook">
+    
     </a>
-    <a href="https://instagram.com"
+    <a href="https://twitter.com"
     target="_blank" class="social-icon">
-    <img src="instagram-icon.png"
-    alt="Instagram"></a>
- </div>
-    </div>
-    <p class="footer-text">2024 Fitness.All rights reserved</p>
-  </footer>
-         
-        
+    <img src="twitter-icon.png"
+    alt="Twitter">
+</a>
+<a href="https://instagram.com"
+target="_blank" class="social-icon">
+<img src="instagram-icon.png"
+alt="Instagram"></a>
+</div>
+</div>
+<p class="footer-text">2024 Fitness.All rights reserved</p>
+</footer>
+     
+    
+
 </body>
 </html>
